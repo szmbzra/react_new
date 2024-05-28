@@ -3,7 +3,7 @@ import React from 'react'
 const Property = () => {
   return (
     <div>
-      <h1>Property</h1>
+      <h1>Property dfsdfsdfsd</h1>
     </div>
   )
 }
