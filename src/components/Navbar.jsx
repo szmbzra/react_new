@@ -15,11 +15,11 @@ const Navbar = () => {
     <div className="container mx-auto my-4">
       <div className='flex justify-between items-center'>
         <div className="logo">
-          <img src={logo} alt="Logo" />
+          <a href ="/home"> <img src={logo} alt="Logo" /></a>
         </div>
-        <ul className='flex gap-14'>
+        <ul className='flex gap-14 align-center  items-center'>
           {navbar.map(({ id, name, urlLink }) => (
-            <li key={id} className={`font-semibold ${active === urlLink ? 'bg-blue-500 text-white px-3 py-1' : 'text-black'}`}>
+            <li key={id} className={`font-semibold ${active === urlLink ? 'bg-defaultColor text-white px-3 py-2' : 'text-black'}`}>
               <Link to={urlLink} onClick={() => handleClick(urlLink)}>{name}</Link>
             </li>
           ))}

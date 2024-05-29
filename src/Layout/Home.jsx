@@ -51,6 +51,8 @@ const Home = () => {
                 </button>
               </div>
               <div className="bg-white w-[441px] h-auto p-6 rounded-tr-md rounded-bl-md rounded-br-md">
+     { background ? (
+      <>
                 <div className="h-12 w-full">
                   <input
                     type="text"
@@ -68,9 +70,13 @@ const Home = () => {
                     <option value="">Location</option>
                   </select>
                 </div>
+      </>
+     ): (<div className="text-center text-xl text-gray-700">
+     Coming Soon
+   </div>)}
                 <div className="flex justify-between gap-2 mt-6">
-                  <button className="bg-orange-300 grow h-12 rounded-md">Filter</button>
-                  <button className="bg-defaultColor grow rounded-md">Search Now</button>
+                  <button className="bg-orange-300 grow h-12 rounded-md hover:bg-defaultColor ">Filter</button>
+                  <button className="bg-orange-300 grow h-12 rounded-md hover:bg-defaultColor">Search Now</button>
                 </div>
               </div>
               <ul className="flex justify-between mt-3 w-[441px] text-white">
