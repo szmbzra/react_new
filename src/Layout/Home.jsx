@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { rentBuy, slider } from '../components/data';
 import Title from '../components/Title';
+import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 
 const Home = () => {
   const [background, setBackground] = useState(true);
@@ -13,8 +14,7 @@ const Home = () => {
   const ToggleBuy = () => {
     setBackground(false);
   };
-
-  return (
+   return (
     <div>
       {/* slider banner */}
       <div className="bg-slate-500 h-[600px] flex">
@@ -99,7 +99,9 @@ const Home = () => {
       </div>
       {/* Slider */}
       <div className="container mx-auto">
-        <div className="flex justify-between text-center">
+ <div className="image_slider">
+<div className="image_wrapper  fle">
+<div className="flex justify-between text-center">
           {slider.map(({ id, name, listing }) => (
             <div className="items" key={id}>
               <div className="rounded-full h-28 w-28 bg-slate-300 mb-3"></div>
@@ -108,6 +110,16 @@ const Home = () => {
             </div>
           ))}
         </div>
+</div>
+        <div className="flex  justify-between">
+<div className="hover:cursor-pointer">
+</div>
+<div className="hover:cursor-pointer ">
+<button><FaArrowRight /></button>
+
+</div>
+        </div>
+ </div>
       </div>
     </div>
   );
