@@ -26,3 +26,10 @@ export const slider = [
   { id: 11, name: "California", listing: 1570 },
   { id: 12, name: "Brazil", listing: 1570 },
 ];
+export const Footers = [
+  { id: 1, name: "Home", urlLink: "/Home" },
+  { id: 2, name: "Property", urlLink: "/Property" },
+  { id: 3, name: "Page", urlLink: "/Page" },
+  { id: 4, name: "Blog", urlLink: "/Blog" },
+  { id: 5, name: "Contact", urlLink: "/Contact" },
+];

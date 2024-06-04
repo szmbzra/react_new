@@ -128,7 +128,7 @@ const Home = () => {
         <div className="image_slider relative">
           <div
             ref={wrapperRef}
-            className="image_wrapper overflow-x-auto w-full whitespace-nowrap"
+            className="image_wrapper overflow-x-hidden w-full whitespace-nowrap"
           >
             <div className="flex justify-evenly text-center w-[2600px]">
               {slider.map(({ id, name, listing }) => (
